@@ -9,6 +9,11 @@ import lombok.AllArgsConstructor;
 @Controller
 @AllArgsConstructor
 public class commonController {
+	
+	@GetMapping(value = {"/", "/index.do"})
+	public String main() {
+		return "vue/index";
+	}
 
 	@GetMapping("/{menu1}.do")
 	public String commonPage1(@PathVariable("menu1") String menu1) {
