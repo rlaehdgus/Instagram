@@ -10,7 +10,7 @@ module.exports = {
                     '^/api' : ''
                 }
 			}
-		} 
+		}
     },
     chainWebpack: config => {  
         const svgRule = config.module.rule("svg");    
